@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container{
+    width: 100%;
+    padding: 35px 10%;
+   }
+
+   .quick-links{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0a0e1d;
+    /* border: 2px solid white; */
+    color: #fff;
+    width: 70%;
+    height:80px;
+    
+    margin-bottom: 20px;
+    border-radius: 30px;
+    /* align-items: center; */
+    margin-left: 200px;
+}
+
+.quick-links ul{
+    /* margin: 50px auto; */
+    /* margin-bottom:500px; */
+    text-align: center;
+}
+
+.quick-links ul li{
+    margin: 0 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quick-links ul li i{
+    font-size: 20px;
+    color: #11a372;
+    margin: 15px ;
+}
+
+
+.quick-links ul li p{
+   
+    font-size: 13px;
+}
+
+.icons{
+text-decoration: none;
+margin-bottom:70px;
+}
+
+.col header.title{
+    font-family: helvetica;
+    color: #11a372;
+    text-align-last: center;
+    font-weight: bolder;
+    padding:10px;
+    margin-bottom: 10px; 
+    /*margin-top: 10px; */
+    /* text-decoration: underline; */
+} 
+
+.col header.title hr{ 
+  
+  color: #11a372;
+  font-size: 40px;
+  text-align: center; 
+  margin-left:300px;
+  margin-right: 300px; 
+  
+ } 
+ .col header.title h2{
+  
+    color: #11a372;
+    font-size: 40px;
+    text-align: center;
+    margin-left:300px;
+     margin-right: 300px; 
+    
+}
+
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+
+.container{
+    padding-right: calc(10% - 30px);
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+
+
+}
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+    color: #bababa;
+    background-color: #11a372;
+}
+
+.col .contents .box::before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height:16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+
+}
+
+.box h4{
+    
+    color: #0a0a0a;
+    font-size: 15px;
+}
+
+.box h3{
+    font-size: 19px;
+    
+    font-family: helvetica;
+    color: #292626;
+
+}
+
+
+.box p{
+    line-height: 1.2;
+    color: #1f1c1c;
+    font-size: 17px;
+}
+
+
+.row{
+  margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container bg-img">
+        <div class="quick-links">
+            <ul>
+                <div class="icons">
+                    <li><i class="fa-solid fa-house"></i>
+                        <p><a href="index.html">Home</a></p></li>
+                    <li><i class="fa-solid fa-circle-info"></i>
+                        <p><a href="about.html">About</a></p></li>
+                    
+                    <li><i class="fa-solid fa-laptop-file"></i>
+                        <p><a href="project.html">Projects</a></p></li>
+                    <li><i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <p><a href="skills.html">My Skills</a></p></li>
+                    
+                    <li><i class="fa-solid fa-address-book"></i>
+                        <p><a href="contact.html">Contact</a></p></li>
+                </div> 
+            </ul>
+        </div>
+        <div>
+            <main class="row">
+                <section class="col">
+                    <header class="title">
+                        <hr><h2>EDUCATION</h2><hr>
+                    </header>
+
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2017-2019</h4>
+                            <h3>HSSC<br>Rosary Higher Secondary School, Navelim</h3>
+                            <p>Board : Goa Board<br></p>
+                        <p>Subjects : Physics | Math | Chemistry | Computer Science</p>
+                                <!-- <br><li><p>Maths</p></li>
+                                <br><li>Chemistry</li>
+                                <br><li>Computer Science</li></ul></p> -->
+                        </div>
+
+                        <div class="box">
+                            <h4>2019-2022</h4>
+                            <h3>Bachelor's Degree In Computer Science<br>Government College of Arts, Science & Commerce, Quepem</h3>
+                            <p>Board : Goa University<br></p><!--Subjects :</p><ul><li>Physics</li>
+                               <br> <li>Maths</li>
+                                <br><li>Computer Science (Major in TY)</li></ul>-->
+                        </div>
+
+                        <div class="box">
+                            <h4>Currently Pursuing</h4>
+                            <h3>Master's Degree in Computer Applications<br>Goa University, Taleigao</h3>
+                            <p>Goa Business School</p>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

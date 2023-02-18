@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Card Slider in HTML & CSS</title>-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    
+    <style>
+   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+     *{
+        margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        font-family:'Poppins', sans-serif;
+     }
+
+     body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #0a0e1d;
+     }
+
+      .box{
+        width:350px;
+        font-weight: 700;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        /* border-bottom: 20px solid #03a9f4; */
+        margin-top: 20px;
+     }
+     
+     .box h2{
+        color: #fff;
+        background: #03a9f4;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 700;
+        border-bottom-left-radius: 10px;
+
+     }
+
+     .box ul{
+        position: relative;
+        background: #fff;
+     }
+
+     .box ul li{
+        list-style: none;
+        padding: 10px;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 5px 25px rgba(0,0,0,.1);
+        transition: transform all;
+     }
+
+     .box ul:hover li{
+        opacity: 0.2;
+     }
+
+     .box ul li:hover{
+        transform: scale(1.1);
+        z-index: 100;
+        background: #25bcff;
+        box-shadow: 0 5px 25px rgba(0,0,0,.2);
+        color:#fff;
+        opacity: 1;
+     }
+
+     .box ul li span{
+        width:20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: #050000;
+        color:#5ebaf0;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        transform: translateY(-2px);
+     }
+
+     .box ul li:hover span{
+        background: #fff;
+        color:#67fd80;
+     }
+
+     
+.quick-links{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0a0e1d;
+    color: #fff;
+    width: 70%;
+    height:80px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    margin-left: 200px;
+}
+.quick-links ul{
+
+    text-align: center;
+}
+
+.quick-links ul li{
+    margin: 0 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quick-links ul li i{
+    font-size: 20px;
+    color: #11a372;
+    margin: 15px ;
+}
+
+
+.quick-links ul li p{
+   
+    font-size: 13px;
+}
+
+.icons{
+text-decoration: none;
+margin-bottom:70px;
+}
+
+hr{
+    color:white;
+    /* margin-top:5px; */
+    margin-bottom: 25px;
+}
+
+.top-div p{
+    color:#11a372;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.wrapper{
+    position: relative;
+    font-family: sans-serif;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a0e1d;
+    color: #0f2244;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+.top-div{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 40px;
+margin-top:10px; 
+}
+  
+.top-div  h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    margin-right: 80px;
+    margin-left:100px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    font-family: helvetica;
+    color: #11a372;
+}
+
+    </style>
+    </head>
+    <body>
+    
+        <div class="wrapper">
+            <div class="top-div">
+             <h1><hr>TECHNICAL SKILLS<p>(Basic to Intermediate knowledge of the following languages)</p><hr></h1>
+            </div>
+        
+
+        
+       <div class="box">
+        <!-- <h2>Basic knowledge of the following languages</h2> -->
+        <ul>
+            <li><span>1</span>C</li>
+            <li><span>2</span>C++</li>
+            <li><span>3</span>Python</li>
+            <li><span>4</span>Java</li>
+            <li><span>5</span>SQL</li>
+            <li><span>6</span>HTML</li>
+            <li><span>7</span>CSS</li>
+        </ul>
+
+       </div>
+    </div>
+       <div class="quick-links">
+        <ul>
+            <div class="icons">
+                <li><i class="fa-solid fa-house"></i>
+                    <p><a href="index.html">Home</a></p></li>
+                <li><i class="fa-solid fa-circle-info"></i>
+                    <p><a href="about.html">About</a></p></li>
+                <li><i class="fa-solid fa-graduation-cap"></i>
+                    <p><a href="education.html">Education</a></p></li>
+                <li><i class="fa-solid fa-laptop-file"></i>
+                    <p><a href="project.html">Projects</a></p></li>
+                <li><i class="fa-solid fa-address-book"></i>
+                    <p><a href="contact.html">Contact</a></p></li>
+            </div> 
+        </ul>
+    </div>
+    </body>
+</html>
